@@ -1,0 +1,261 @@
+*, :after, :before {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+input[type="password"]::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+
+body{
+    background-image: url("assets/bg.3e6f3e6b4d1d2b714ef4.png");
+    background-attachment: fixed;
+    margin-top: 155px;
+}
+@font-face {
+    font-family: Geometria Bold;
+    src: url(assets/Geometria-Bold.1873fe842023d533821b.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Geometria Regular;
+    src: url(assets/Geometria-Regular.8f177d24d33171dfc518.ttf); /* Путь к файлу со шрифтом */
+}
+.logo-ico{
+    width: 120px;
+    height: 120px;
+
+
+}
+.logIn-auth-title {
+    color: #fff;
+    font-family: Geometria Bold;
+    font-size: 2.7777777777777777vh;
+    margin-top: 1.8518518518518516vh;
+    align-items: center;
+}
+.logIn-auth-desc {
+    color: white;
+    font-family: Geometria Regular;
+    font-size: 1.3888888888888888vh;
+}
+.logIn-auth-desc span {
+    color: #ffa500;
+}
+.logIn-auth-content-input {
+    align-items: center;
+    background: hsla(0,0%,100%,.1);
+    border-radius: 0.9259259259259258vh;
+    display: flex;
+    height: 5.555555555555555vh;
+    margin-top: 15px;
+    padding-left: 1.2962962962962963vh;
+    padding-right: 1.2962962962962963vh;
+    width: 307px;
+    font-weight: bold;
+
+}
+.logIn-auth-content-input input {
+    background: none;
+    border: none;
+    font-family: Geometria Regular;
+    font-size: 1.8518518518518516vh;
+    margin-left: 0.7407407407407407vh;
+    opacity: 1;
+    outline: none;
+    width: 29.999999999999996vh;
+    color: #fff;
+}
+::placeholder{
+    color: #858585;
+    font-size: 18px;
+}
+.logIn-auth-content-button {
+    align-items: center;
+    background: linear-gradient(180deg,#fde910,#ffa500);
+    border-radius: 0.9259259259259258vh;
+    color: #fff;
+    display: flex;
+    font-family: Geometria Regular;
+    font-size: 1.6666666666666665vh;
+    height: 5.555555555555555vh;
+    justify-content: center;
+    margin-top: 1.8518518518518516vh;
+    transition: all .3s;
+    width: 290px;
+    border: none;
+    outline: none;
+}
+.logIn-auth-content-button:hover {
+    opacity: 0.4;
+    transition: 0.35s;
+}
+
+.logIn-notify {
+    align-items: center;
+    border-radius: 0.9259259259259258vh;
+    bottom: 1.8518518518518516vh;
+    color: #fff;
+    display: flex;
+    font-family: Geometria Regular;
+    font-size: 1.8518518518518516vh;
+    height: 5.555555555555555vh;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    position: absolute;
+    text-align: center;
+    -webkit-transform: translate(-50%,100%);
+    transform: translate(-50%,100%);
+    transition: 0.35s;
+    width: 35.18518518518518vh;
+    top: 85%;
+}
+.logIn-notify_error {
+    background: rgba(255,51,51,.5);
+    opacity: 1;
+    transition: 0.35s;
+}
+.logIn-notify_access {
+    background: rgba(41,218,59,.5);
+    opacity: 1;
+    transition: 0.35s;
+}
+
+.logIn-auth-content-help {
+    color: #fff;
+    display: flex;
+    font-family: Geometria Regular;
+    font-size: 1.3888888888888888vh;
+    justify-content: space-between;
+    margin-top: 1.111111111111111vh;
+    width: 309px;
+    opacity: .5;
+    transition: all .3s;
+}
+.logIn-auth-content-help a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    font-family: Geometria Regular;
+    font-size: 1.3888888888888888vh;
+    justify-content: space-between;
+    margin-top: vh;
+    width: 309px;
+}
+.logIn-auth-content-help div {
+    transition: all .3s;
+}
+.logIn-auth-content-help:hover div {
+
+}
+.logIn-auth-content-help1:hover {
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.logIn-auth-content-help2:hover {
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.logIn-auth-content-help-NowPass1:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.logIn-auth-content-save {
+    display: flex;
+    width: 130px; margin: 0 auto;
+    margin-top: 1.111111111111111vh;
+}
+.logIn-auth-content-save__check {
+    background: hsla(0,0%,100%,.2);
+    border-radius: 0.4629629629629629vh;
+    display: flex;
+    height: 2.314814814814815vh;
+    justify-content: center;
+    width: 2.314814814814815vh;
+}
+.logIn-auth-content-save__check_active {
+    background: linear-gradient(180deg,#ffa500,#fde910);
+    border-radius: 0.4629629629629629vh;
+    content: "";
+    height: 1.9444444444444444vh;
+    opacity: 1;
+    width: 1.9444444444444444vh;
+    transition: 0.35s;
+}
+.logIn-auth-content-save__check:after {
+    background: linear-gradient(180deg,#ffa500,#fde910);
+    border-radius: 0.4629629629629629vh;
+    content: "";
+    height: 1.9444444444444444vh;
+    opacity: 0;
+    transition: 1s;
+    width: 1.9444444444444444vh;
+}
+.savedBTN:after {
+    background: linear-gradient(180deg,#ffa500,#fde910);
+    border-radius: 0.4629629629629629vh;
+    content: "";
+    height: 1.9444444444444444vh;
+    opacity: 1;
+    transition: all .3s;
+    width: 1.9444444444444444vh;
+}
+.logIn-auth-content-save__check {
+    align-items: center;
+    background: hsla(0,0%,100%,.2);
+    border-radius: 0.4629629629629629vh;
+    display: flex;
+    height: 2.314814814814815vh;
+    justify-content: center;
+    width: 2.314814814814815vh;
+}
+.logIn-auth-content-save span {
+    color: #fff;
+    font-family: Geometria Regular;
+    font-size: 1.3888888888888888vh;
+    margin-left: 0.7407407407407407vh;
+    opacity: .5;
+}
+
+.Logo-Michael:after {
+    background: url(assets/player.d1ce410caf3a766e8a43.png) no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: "";
+
+    opacity: 1;
+    position: absolute;
+    right: 0%;
+    transition: all 1s;
+    height: 88.12962962962962vh;
+    width: 60vh;
+    z-index: 1;
+}
+
+.logIn-auth-content-help-NowPass {
+    font-size: 25px;
+    color: #fff;
+    display: flex;
+    font-family: Geometria Regular;
+    font-size: 1.3888888888888888vh;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 125px;
+    opacity: .5;
+    transition: all .3s;
+}
+.logIn-auth-content-help-NowPass a:hover {
+    color: white;
+    transition: all .3s;
+}
